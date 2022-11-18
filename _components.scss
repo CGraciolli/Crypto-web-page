@@ -6,7 +6,7 @@ $main_color: #0075FF;
     color: $background_color;
     border: solid 1px $main_color;
     border-radius:0.25rem;
-    padding: 0.5rem 1rem;
+    padding: 0.25rem 1rem;
 
     &:hover{
         background-color: $background_color;
@@ -58,10 +58,10 @@ $main_color: #0075FF;
 }
 
 .icon-sm{
-    width: 4rem;
-    height: 4rem;
+    width: 3rem;
+    height: 3rem;
     color: $main_color;
-    padding: 0.1rem 0.25rem;
+    padding: 0.7rem 0.7rem;
     border-radius: 50%;
     box-shadow: 0 0 10px #00000040;
 }

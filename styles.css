@@ -3,7 +3,7 @@
   color: #FFFFFF;
   border: solid 1px #0075FF;
   border-radius: 0.25rem;
-  padding: 0.5rem 1rem;
+  padding: 0.25rem 1rem;
 }
 .main-btn:hover, .main-btn-s:hover {
   background-color: #FFFFFF;
@@ -48,10 +48,10 @@
 }
 
 .icon-sm {
-  width: 4rem;
-  height: 4rem;
+  width: 3rem;
+  height: 3rem;
   color: #0075FF;
-  padding: 0.1rem 0.25rem;
+  padding: 0.7rem 0.7rem;
   border-radius: 50%;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2509803922);
 }
@@ -155,9 +155,10 @@ body {
   justify-content: space-between;
 }
 .sec-home .sing-up input {
-  padding: 0.5rem;
+  padding: 0.3rem 0.5rem;
   border-radius: 0.25rem;
   border: solid 1px #DDDDDD;
+  max-width: 10rem;
 }
 .sec-home .sing-up input:focus {
   box-shadow: 0 0 10px #0075FF;

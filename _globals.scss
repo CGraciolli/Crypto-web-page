@@ -48,9 +48,10 @@ body {
         justify-content: space-between;
 
         input{
-            padding: 0.5rem;
+            padding: 0.3rem 0.5rem;
             border-radius: 0.25rem;
             border: solid 1px #DDDDDD;
+            max-width: 10rem;
 
             &:focus{
                 box-shadow: 0 0 10px $main_color;
