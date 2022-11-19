@@ -48,10 +48,10 @@
 }
 
 .icon-sm {
-  width: 3rem;
-  height: 3rem;
+  width: 4rem;
+  height: 4rem;
   color: #0075FF;
-  padding: 0.7rem 0.7rem;
+  padding: 0.25rem 0.5rem;
   border-radius: 50%;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2509803922);
 }
@@ -178,9 +178,90 @@ body {
   flex-direction: column;
   align-items: center;
 }
-.sec-call-to-action .call-to-action-header p {
+.sec-call-to-action .call-to-action-header .description-header {
   font-size: 0.8rem;
   color: #888897;
+}
+.sec-call-to-action .call-to-action-header .portofolio {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.sec-call-to-action .call-to-action-header .portofolio .items {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.sec-call-to-action .call-to-action-header .portofolio .items .item {
+  display: flex;
+  flex-direction: row;
+}
+.sec-call-to-action .call-to-action-header .portofolio .img-portfolio {
+  max-width: 20rem;
+}
+
+.sec-features {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.sec-features .header-features {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 2rem;
+}
+.sec-features .items {
+  display: flex;
+  justify-content: space-between;
+}
+
+.sec-kpis {
+  display: flex;
+  background-color: #0075FF;
+  justify-content: space-evenly;
+  padding: 3rem;
+}
+.sec-kpis .item {
+  color: #FFFFFF;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+.sec-kpis .item .number {
+  font-size: 3.5rem;
+}
+.sec-kpis .item .description {
+  opacity: 0.5;
+  font-size: 0.8;
+}
+
+.sec-on-boarding {
+  padding: 3rem 0rem;
+}
+.sec-on-boarding .header-on-boarding {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.sec-on-boarding .items {
+  padding-top: 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.footer-cta {
+  background-image: url(img/bg.png);
+  background-repeat: no-repeat;
+  background-position: right;
+  background-color: #F4F8FE;
+  display: flex;
+  align-items: left;
+}
+.footer-cta .text {
+  padding: 5rem;
+  max-width: 50%;
 }
 
 /*# sourceMappingURL=styles.css.map */

@@ -1,4 +1,5 @@
 $main_color: #0075FF;
+$background_color: #FFFFFF;
 
 *{
     margin:0;
@@ -75,9 +76,103 @@ body {
         flex-direction: column;
         align-items: center;
 
-        p{
+        .description-header{
             font-size:0.8rem;
             color: #888897;
         }
+
+        .portofolio{
+                display:flex;
+                flex-direction:row;
+                align-items: center;
+
+                .items{
+                    display:flex;
+                    flex-direction:row;
+                    align-items: center;
+
+                    .item{
+                        display:flex;
+                        flex-direction: row;
+                    }
+                }
+
+            .img-portfolio{
+                max-width: 20rem;
+            }
+            }
+    }
+}
+
+.sec-features{
+    display:flex;
+    align-items: center;
+    flex-direction: column;
+
+    .header-features{
+        display:flex;
+        align-items:center;
+        flex-direction: column;
+        padding: 2rem;
+
+    }
+
+    .items{
+        display:flex;
+        justify-content: space-between;
+    }
+}
+
+.sec-kpis{
+    display:flex;
+    background-color: $main_color;
+    justify-content: space-evenly;
+    padding: 3rem;
+
+    .item{
+        color: $background_color;
+        align-items: center;
+        display:flex;
+        flex-direction: column;
+
+        .number{
+            font-size: 3.5rem;
+        }
+
+        .description{
+            opacity: 0.5;
+            font-size: 0.8;
+        }
+    }
+}
+
+.sec-on-boarding{
+    padding: 3rem 0rem;
+    .header-on-boarding{
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .items{
+        padding-top: 4rem;
+        display:flex;
+        align-items: center;
+        justify-content: space-between;
+        }
+
+}
+
+.footer-cta{
+    background-image: url(img/bg.png);
+    background-repeat: no-repeat;
+    background-position: right;
+    background-color: #F4F8FE;
+    display: flex;
+    align-items: left;
+
+    .text{
+        padding: 5rem;
+        max-width: 50%;
     }
 }

@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Proyecto Final HTML CSS</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
     <link rel="stylesheet" href="styles.css">
     
 </head>
@@ -31,9 +32,7 @@
             <div class="start">
                 <div class="header">
                     <p>Jump start your portfolio &nbsp</p>
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-arrow-right icon" viewBox="0 0 16 16">
-                        <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/>
-                      </svg>
+                    <i class="bi bi-arrow-right icon"></i>
                 </div>
                 <h1 class="title">Jump start your crypto portfolio</h1>
                 <p class="description">Coinbase is the easiest place to buy and sell cryptocurrecy. Sign up and get started today.</p>
@@ -43,28 +42,110 @@
         </section>
         <section class="sec-call-to-action">
             <div class="call-to-action-header">
-                <h3 class="title">Create your cryptocurrency portfolio today</h3>
-                <p class="description">Coinbase has a variety of features that make it the best place to start trading</p>
+                <h3 class="title-header">Create your cryptocurrency portfolio today</h3>
+                <p class="description-header">Coinbase has a variety of features that make it the best place to start trading</p>
             </div>
             <div class="portfolio">
                 <div class="items">
                 <div class="item">
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-graph-up icon-sm" viewBox="0 0 16 16">
-                        <path fill-rule="evenodd" d="M0 0h1v15h15v1H0V0Zm14.817 3.113a.5.5 0 0 1 .07.704l-4.5 5.5a.5.5 0 0 1-.74.037L7.06 6.767l-3.656 5.027a.5.5 0 0 1-.808-.588l4-5.5a.5.5 0 0 1 .758-.06l2.609 2.61 4.15-5.073a.5.5 0 0 1 .704-.07Z"/>
-                      </svg>
-                    <div class="text">
-                        <h4 class="title">Manage your portfolio</h4>
-                        <p class="description">Buy and sell popular digital currencies, keep track of them in the one place.</p>
+                    <i class="bi bi-graph-up icon-sm"></i>
+                    <div class="text-item">
+                        <h4 class="title-portfolio">Manage your portfolio</h4>
+                        <p class="description-portfolio">Buy and sell popular digital currencies, keep track of them in the one place.</p>
+                    </div>
+                </div>
+                <div class="item">
+                    <i class="bi bi-calendar icon-sm"></i>
+                    <div class="text-item">
+                        <h4 class="title-portfolio">Recurring buys</h4>
+                        <p class="description-portfolio">Invest in cryptocurrency slowly over time by scheduling buys daily, weekly, or monthly.</p>
+                    </div>
+                </div>
+                <div class="item">
+                    <i class="bi bi-phone icon-sm"></i>
+                    <div class="text-item">
+                        <h4 class="title-portfolio">Mobile apps</h4>
+                        <p class="description-portfolio">Stay on top of the markets with the Coinbase app for Android or iOS.</p>
                     </div>
                 </div>
                 </div>
-                <img src="img/chart.png" alt="chart"/>
+                <img src="img/chart.png" alt="chart" class="img-portfolio"/>
             </div>
         </section> <hr>
-        <section class="sec-features"></section>
-        <section class="sec-benefits"></section>
-        <section class="sec-kpis"></section>
-        <section class="on-boarding"></section>
-        <section class="footer-cta"></section>
+        <section class="sec-features">
+            <div class="header-features">
+                <h3 class="title-features">The most trusted cryptocurrency platform</h3>
+                <p class="description-header">Here are a few reasons why you should choose Coinbase</p>
+            </div>
+            <div class="items">
+                <div class="feature">
+                    <i class="bi bi-eye-fill icon"></i>
+                    <div class="description">
+                        <h4 class="title">Secure storage</h4>
+                        <p class="text">We store the vast majority of the digital assets in secure offline storage.</p>
+                    </div>
+                    <p class="cta">Learn how Coinbase keeps your funds safe and secure</p>
+                </div>
+                <div class="feature">
+                    <i class="bi bi-envelope-fill icon"></i>
+                    <div class="description">
+                        <h4 class="title">Industry best practices</h4>
+                        <p class="text">Coinbase supports a variety of the most popular digital currencies.</p>
+                    </div>
+                    <p class="cta">Learn how we implement industry best practices for account security</p>
+                </div>
+                <div class="feature">
+                    <i class="bi bi-shield-shaded icon"></i>
+                    <div class="description">
+                        <h4 class="title">Secure storage</h4>
+                        <p class="text">We store the vast majority of the digital assets in secure offline storage.</p>
+                    </div>
+                    <p class="cta">Learn how Coinbase keeps your funds safe and secure</p>
+                </div>
+            </div>
+        </section>
+        <section class="sec-kpis">
+            <div class="item">
+                <h1 class="number">$547B</h1>
+                <p class="description">Quarterly volume traded</p>
+            </div>
+            <div class="item">
+                <h1 class="number">100+</h1>
+                <p class="description">Countries supported</p>
+            </div>
+            <div class="item">
+                <h1 class="number">89+M</h2>
+                <p class="description">Verified users</p>
+            </div>
+        </section>
+        <section class="sec-on-boarding">
+            <div class="header-on-boarding">
+                <h3 class="title">Get started in a few minutes</h3>
+                <p class="description">Coinbase supports a variety of the most popular digital currencies.</p>
+            </div>
+            <div class="items">
+                <div class="icon-desc">
+                    <i class="bi bi-person-plus-fill icon"></i>
+                    <h4 class="title">Create an account</h4>
+                </div>
+                <hr>
+                <div class="icon-desc">
+                    <i class="bi bi-bank icon"></i>
+                    <h4 class="title">Link your bank account</h4>
+                </div>
+                <hr>
+                <div class="icon-desc">
+                    <i class="bi bi-coin icon"></i>
+                    <h4 class="title">Purchase some coin</h4>
+                </div>
+            </div>
+        </section>
+        <section class="footer-cta">
+            <div class="text">
+                <h2 class="title-footer">Earn up to $7 worth of crypto</h2>
+                <p class="description-footer">Discover how specific cryptocurrencies work — and get a bit of each crypto to try out for yourself.</p>
+                <button class="main-btn">Start earning</button>
+            </div>
+        </section>
     </div>
 </html>
