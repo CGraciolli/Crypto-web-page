@@ -3,7 +3,7 @@
   color: #FFFFFF;
   border: solid 1px #0075FF;
   border-radius: 0.25rem;
-  padding: 0.25rem 1rem;
+  padding: 0.25rem 1.5rem;
 }
 .main-btn:hover, .main-btn-s:hover {
   background-color: #FFFFFF;
@@ -62,6 +62,7 @@
   display: flex;
   flex-direction: column;
   text-align: center;
+  justify-items: center;
   width: 30rem;
 }
 .feature .icon {
@@ -72,12 +73,17 @@
   align-self: center;
   margin-bottom: 2rem;
 }
+.feature .description {
+  align-self: center;
+  max-width: 500px;
+}
 .feature .description .title {
   font-size: 2rem;
 }
 .feature .description .text {
   color: #888888;
   font-weight: 600;
+  font-size: 0.9rem;
 }
 .feature .cta {
   color: #0075FF;
@@ -156,7 +162,7 @@ hr {
   justify-content: space-evenly;
 }
 .sec-home .start {
-  max-width: 20%;
+  max-width: 350px;
 }
 .sec-home .start .header .icon {
   margin-top: 0;
@@ -164,6 +170,11 @@ hr {
 
 h1 {
   font-size: 3rem;
+  max-width: 300px;
+}
+
+.description {
+  max-width: 300px;
 }
 
 .sing-up {
@@ -194,8 +205,12 @@ h1 {
   flex-direction: column;
   align-items: center;
 }
+.sec-call-to-action .call-to-action-header .title-header {
+  align-self: center;
+  font-size: 2rem;
+}
 .sec-call-to-action .call-to-action-header .description-header {
-  font-size: 0.8rem;
+  font-size: 0.9rem;
   color: #888897;
 }
 .sec-call-to-action .portfolio {
@@ -206,10 +221,12 @@ h1 {
   gap: 2rem;
 }
 .sec-call-to-action .portfolio .items {
+  margin-top: 2rem;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  max-width: 400px;
 }
 .sec-call-to-action .portfolio .items .span {
   display: flex;
@@ -271,6 +288,9 @@ h1 {
   flex-direction: column;
   align-items: center;
 }
+.sec-on-boarding .header-on-boarding .description {
+  max-width: 500px;
+}
 .sec-on-boarding .items {
   padding-top: 4rem;
   display: flex;
@@ -293,7 +313,26 @@ h1 {
 }
 .footer-cta .text {
   padding: 5rem;
-  max-width: 50%;
+  max-width: 700px;
+}
+
+@media (max-width: 768px) {
+  .sec-on-boarding .items {
+    flex-direction: column;
+  }
+  .sec-on-boarding .items .item {
+    margin: 0;
+    padding: 0;
+  }
+  .sec-on-boarding .items .separator {
+    max-width: 0;
+    max-height: 0;
+    margin: 0;
+  }
+  .footer-cta {
+    background-image: none;
+    text-align: center;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */

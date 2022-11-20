@@ -6,7 +6,7 @@ $main_color: #0075FF;
     color: $background_color;
     border: solid 1px $main_color;
     border-radius:0.25rem;
-    padding: 0.25rem 1rem;
+    padding: 0.25rem 1.5rem;
 
     &:hover{
         background-color: $background_color;
@@ -72,6 +72,7 @@ $main_color: #0075FF;
     display:flex;
     flex-direction: column;
     text-align: center;
+    justify-items: center;
     width: 30rem;
     .icon{
         color: $main_color;
@@ -82,12 +83,16 @@ $main_color: #0075FF;
         margin-bottom: 2rem;
     }
     .description{
+        align-self: center;
+        max-width: 500px;
+
         .title{
             font-size: 2rem;
         }
         .text{
             color: #888888;
             font-weight: 600;
+            font-size: 0.9rem;
         }
     }
     .cta{

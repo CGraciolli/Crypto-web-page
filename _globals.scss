@@ -42,11 +42,11 @@ hr{
     display:flex;
     align-items: center;
     justify-content:space-evenly;
+
     .start{
-        max-width:20%;
+        max-width:350px;
 
         .header{
-
             .icon{
                 margin-top:0;
                 }
@@ -56,8 +56,12 @@ hr{
 
     h1{
         font-size:3rem;
+        max-width:300px;
     }
 
+    .description{
+        max-width:300px;
+    }
     .sing-up{
         display:flex;
         justify-content: space-between;
@@ -88,10 +92,16 @@ hr{
         display:flex;
         flex-direction: column;
         align-items: center;
-
+        
+        .title-header{
+            align-self: center;
+            font-size: 2rem;
+        }
+        
         .description-header{
-            font-size:0.8rem;
+            font-size:0.9rem;
             color: #888897;
+
         }
     }
 
@@ -104,10 +114,12 @@ hr{
 
 
                 .items{
+                    margin-top: 2rem;
                     display:flex;
                     flex-direction:column;
                     align-items: center;
                     justify-content: center;
+                    max-width: 400px;
 
                     .span{
                         display:flex;
@@ -180,6 +192,10 @@ hr{
         display:flex;
         flex-direction: column;
         align-items: center;
+
+        .description{
+            max-width:500px;
+        }
     }
 
 
@@ -209,6 +225,29 @@ hr{
 
     .text{
         padding: 5rem;
-        max-width: 50%;
+        max-width: 700px;
+    }
+}
+
+@media (max-width: 768px){
+    .sec-on-boarding .items{
+        flex-direction: column;
+
+        .item{
+            margin:0;
+            padding:0;
+        }
+
+        .separator {
+            max-width:0;
+            max-height:0;
+            margin:0;
+        }
+    }
+
+    .footer-cta {
+        background-image:none;
+        text-align: center;
+
     }
 }
