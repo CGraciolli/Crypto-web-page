@@ -209,7 +209,7 @@ h1 {
   display: flex;
   flex-direction: column;
   align-items: center;
-  max-width: 35%;
+  justify-content: center;
 }
 .sec-call-to-action .portfolio .items .span {
   display: flex;
@@ -274,8 +274,13 @@ h1 {
 .sec-on-boarding .items {
   padding-top: 4rem;
   display: flex;
-  align-items: center;
-  justify-content: space-between;
+  justify-content: center;
+}
+.sec-on-boarding .items .separator {
+  flex: 1;
+  border-top: 2px solid #ddd;
+  margin: 0 1rem;
+  margin-top: 8rem;
 }
 
 .footer-cta {
