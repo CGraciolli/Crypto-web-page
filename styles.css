@@ -48,24 +48,29 @@
 }
 
 .icon-sm {
-  width: 4rem;
-  height: 4rem;
+  font-size: 1.4rem;
+  padding: 0.4rem 0.7rem;
   color: #0075FF;
-  padding: 0.25rem 0.5rem;
   border-radius: 50%;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2509803922);
+  width: 3rem;
+  height: 3rem;
+  margin: 1rem;
 }
 
 .feature {
   display: flex;
   flex-direction: column;
   text-align: center;
+  width: 30rem;
 }
 .feature .icon {
   color: #0075FF;
   width: 10rem;
   height: 10rem;
+  font-size: 8rem;
   align-self: center;
+  margin-bottom: 2rem;
 }
 .feature .description .title {
   font-size: 2rem;
@@ -90,11 +95,12 @@
   color: #0075FF;
   width: 10rem;
   height: 10rem;
+  font-size: 10rem;
   align-self: center;
   padding: 0;
+  margin-bottom: 4rem;
 }
 .icon-desc .title {
-  margin-top: -2rem;
   font-weight: 600;
 }
 
@@ -116,7 +122,6 @@
 html {
   margin: 0;
   padding: 0;
-  min-width: 100%;
 }
 
 body {
@@ -124,18 +129,24 @@ body {
   margin: 0;
 }
 
+hr {
+  margin: 0;
+  padding: 0;
+  color: #888897;
+}
+
 .container {
   width: 100%;
 }
 
 .nav {
-  margin: 2rem;
+  margin: 0;
+  padding: 0;
   display: flex;
   align-items: center;
   justify-content: space-around;
   width: 100%;
   height: 4rem;
-  border: 1px solid #DDDDDD;
 }
 
 .sec-home {
@@ -145,22 +156,27 @@ body {
   justify-content: space-evenly;
 }
 .sec-home .start {
-  max-width: 25%;
+  max-width: 20%;
 }
-.sec-home h1 {
+.sec-home .start .header .icon {
+  margin-top: 0;
+}
+
+h1 {
   font-size: 3rem;
 }
-.sec-home .sing-up {
+
+.sing-up {
   display: flex;
   justify-content: space-between;
 }
-.sec-home .sing-up input {
+.sing-up input {
   padding: 0.3rem 0.5rem;
   border-radius: 0.25rem;
   border: solid 1px #DDDDDD;
   max-width: 10rem;
 }
-.sec-home .sing-up input:focus {
+.sing-up input:focus {
   box-shadow: 0 0 10px #0075FF;
   border: solid 1px #DDDDDD;
   outline: none;
@@ -182,21 +198,28 @@ body {
   font-size: 0.8rem;
   color: #888897;
 }
-.sec-call-to-action .call-to-action-header .portofolio {
+.sec-call-to-action .portfolio {
   display: flex;
   flex-direction: row;
   align-items: center;
+  justify-content: center;
+  gap: 2rem;
 }
-.sec-call-to-action .call-to-action-header .portofolio .items {
+.sec-call-to-action .portfolio .items {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
+  align-items: center;
+  max-width: 35%;
+}
+.sec-call-to-action .portfolio .items .span {
+  display: flex;
   align-items: center;
 }
-.sec-call-to-action .call-to-action-header .portofolio .items .item {
+.sec-call-to-action .portfolio .items .item {
   display: flex;
   flex-direction: row;
 }
-.sec-call-to-action .call-to-action-header .portofolio .img-portfolio {
+.sec-call-to-action .portfolio .img-portfolio {
   max-width: 20rem;
 }
 
@@ -204,6 +227,7 @@ body {
   display: flex;
   align-items: center;
   flex-direction: column;
+  margin-bottom: 2rem;
 }
 .sec-features .header-features {
   display: flex;
@@ -213,7 +237,8 @@ body {
 }
 .sec-features .items {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
+  gap: 2rem;
 }
 
 .sec-kpis {
@@ -237,7 +262,9 @@ body {
 }
 
 .sec-on-boarding {
-  padding: 3rem 0rem;
+  padding: 3rem 4rem;
+  margin: 0rem 2rem;
+  margin-bottom: 2rem;
 }
 .sec-on-boarding .header-on-boarding {
   display: flex;

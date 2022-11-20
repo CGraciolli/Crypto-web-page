@@ -9,7 +9,6 @@ $background_color: #FFFFFF;
 html {
     margin:0;
     padding:0;
-    min-width: 100%;
 }
 
 body {
@@ -17,18 +16,25 @@ body {
     margin: 0;
 }
 
+hr{
+    margin:0;
+    padding:0;
+    color: #888897;
+}
+
 .container{
     width:100%;
 }
 
 .nav{
-    margin: 2rem;
+    margin:0;
+    padding:0;
     display:flex;
     align-items: center;
     justify-content:space-around;
     width:100%;
     height: 4rem;
-    border: 1px solid #DDDDDD;
+
 }
 
 .sec-home{
@@ -37,7 +43,15 @@ body {
     align-items: center;
     justify-content:space-evenly;
     .start{
-        max-width:25%;
+        max-width:20%;
+
+        .header{
+
+            .icon{
+                margin-top:0;
+                }
+            }
+        }
     }
 
     h1{
@@ -62,7 +76,6 @@ body {
         }
 
     }
-}
 
 .sec-call-to-action{
     margin: 4rem;
@@ -80,16 +93,25 @@ body {
             font-size:0.8rem;
             color: #888897;
         }
+    }
 
-        .portofolio{
+        .portfolio{
                 display:flex;
                 flex-direction:row;
                 align-items: center;
+                justify-content: center;
+                gap: 2rem;
 
                 .items{
                     display:flex;
-                    flex-direction:row;
+                    flex-direction:column;
                     align-items: center;
+                    max-width:35%;
+
+                    .span{
+                        display:flex;
+                        align-items: center;
+                    }
 
                     .item{
                         display:flex;
@@ -100,7 +122,6 @@ body {
             .img-portfolio{
                 max-width: 20rem;
             }
-            }
     }
 }
 
@@ -108,6 +129,7 @@ body {
     display:flex;
     align-items: center;
     flex-direction: column;
+    margin-bottom: 2rem;
 
     .header-features{
         display:flex;
@@ -119,7 +141,8 @@ body {
 
     .items{
         display:flex;
-        justify-content: space-between;
+        justify-content: space-evenly;
+        gap: 2rem;
     }
 }
 
@@ -147,7 +170,11 @@ body {
 }
 
 .sec-on-boarding{
-    padding: 3rem 0rem;
+
+    padding: 3rem 4rem;
+    margin: 0rem 2rem;
+    margin-bottom: 2rem;
+    
     .header-on-boarding{
         display:flex;
         flex-direction: column;
